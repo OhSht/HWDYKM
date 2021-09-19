@@ -1,0 +1,162 @@
+.header {
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 346px;
+    width: 1228px;
+    height: 250px;
+    background-color: #ffffff;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.wrapper {
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 346px;
+    width: 1228px;
+    background-color: #ffe4b5;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.left {
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 0px;
+    width: 576px;
+    height: 300px;
+    background-color: #fdf5e6;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+#slide {
+    position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: .5s;
+}
+
+@-webkit-keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide {
+    100% {
+        left: 0;
+    }
+}
+
+input,
+div {
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    font: 20px sans-serif
+}
+
+.form-submit-button {
+    background: #B9DFFF;
+    color: #fff;
+    border: 1pxsolid#eee;
+    border-radius: 20px;
+    box-shadow: 5px5px5px#eee;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    position: relative;
+    background-color: #3e9ffa;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 25px;
+    width: 300px;
+    left: 145;
+    right: 450;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    background-color: #ff784ff1;
+    right: 0;
+}
+
+.right {
+    text-align: center;
+    position: relative;
+    float: right;
+    right: 0px;
+    width: 652px;
+    height: 300px;
+    background-color: #ffebcd;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    float: left;
+    left: 346px;
+    width: 1228px;
+    height: 45px;
+    background-color: #eed5b7;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+body {
+    text-align: center;
+    border-width: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 90%;
+    background-color: #ffffff;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
