@@ -30,30 +30,6 @@
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
-#slide {
-    position: absolute;
-    left: -100px;
-    width: 100px;
-    height: 100px;
-    background: blue;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: .5s;
-}
-
-@-webkit-keyframes slide {
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes slide {
-    100% {
-        left: 0;
-    }
-}
-
 input,
 div {
     text-align: center;
@@ -86,7 +62,6 @@ div {
 }
 
 .button {
-    display: inline-block;
     border-radius: 4px;
     position: relative;
     background-color: #3e9ffa;
@@ -94,18 +69,16 @@ div {
     color: #FFFFFF;
     text-align: center;
     font-size: 28px;
-    padding: 25px;
+    padding:10px;
     width: 300px;
-    left: 145;
-    right: 450;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 15px;
+    margin: 10px 100px;
+
 }
 
 .button span {
     cursor: pointer;
-    display: inline-block;
     position: relative;
     transition: 0.5s;
 }
